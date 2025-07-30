@@ -19,25 +19,25 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model("User", userSchema);
 module.exports = User;
 
-// User.insertMany([
-//   {
-//     from: "Alice",
-//     message: "Hello Bob!",
-//     to: "Bob",
-//   },
-//   {
-//     from: "Bob",
-//     message: "Hi Alice!",
-//     to: "Alice",
-//   },
-//   {
-//     from: "Alice",
-//     message: "How are you?",
-//     to: "Bob",
-//   },
-//   {
-//     from: "Bob",
-//     message: "I'm good, thanks!",
-//     to: "Alice",
-//   },
-// ]);
+User.insertMany([
+  {
+    from: "Alice",
+    message: "Hello Bob!",
+    to: "Bob",
+  },
+  {
+    from: "Bob",
+    message: "Hi Alice!",
+    to: "Alice",
+  },
+  {
+    from: "Alice",
+    message: "How are you?",
+    to: "Bob",
+  },
+  {
+    from: "Bob",
+    message: "I'm good, thanks!",
+    to: "Alice",
+  },
+]);
